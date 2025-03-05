@@ -1,0 +1,438 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.chessboard{
+  margin-top: 30px;
+    width:90%;
+    height:85%;
+    flex-wrap: wrap;
+    display:flex;
+
+}
+.App{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.76);
+   
+}
+.piece{
+  height:65px;
+ }
+.new{
+    width:650px;
+    height:650px;
+}
+.sq{
+    width:12.5%;
+    height:12.5%;
+}
+.square-dark{
+    background-color: rgba(195, 203, 214, 0.96);
+}
+.square-light{
+    background-color: rgb(69, 116, 182);
+}
+.fret{
+    height:100%;
+    width:100%;
+}
+.auto-flip-button {
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 6px;
+  background-color: #2e7e2f;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.piece-container{
+  cursor:grab;
+  width:100%;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+.piece-design{
+
+   max-width: 100%;
+   max-height: 100%;
+  }
+ .white-class{
+  margin-top: -55px;
+ }
+ .dark-class{
+  margin-top: -55px;
+ }
+.promo-piece{
+  height:52px;
+  
+}
+.promotion-array{
+  gap:11px;
+}
+ .reset-button {
+   
+    padding: 10px 20px;
+    background-color: #bb8041;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  
+  .reset-button:hover {
+    background-color: #bc6954;
+  }
+  
+  .chessboard12{
+    display: flex;
+   
+  }
+  .chess-board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  
+  .chess-board div {
+    transform: rotate(0deg);
+  }
+  .flip-button{
+    background-color:rgb(0, 115, 255);
+    color: white;
+    height:30px;
+    width:80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .flip-button:hover{
+    background-color: rgb(0, 115, 255);
+  }
+  
+  @media (max-width:768px) {
+    .piece{
+      height:64px;
+      width:64px;
+     }
+     .chessboard 
+     {
+     height:95%;
+     width:95%; 
+     margin-left: 28px;
+     margin-top: 25px;
+  }
+  .promo-piece{
+  
+    height:50px;
+  }
+  .promotion-array{
+  margin-top: 5px;
+  
+  }
+  .chessboard12{
+    margin-left: -68px;
+  }
+  
+  .reset-button{
+    
+      padding: 10px 20px;
+      margin-left: 25px;
+      font-size: 12px;
+  
+  }
+  .flip-button{
+      font-size: 12px;
+  }
+  .auto-flip-button {
+    font-size: 11.5px;
+  }
+}
+@media (max-width:680px) {
+  .piece{
+    height:58px;
+    width:58px;
+   }
+   .chessboard 
+   {
+   height:82%;
+   width:90%; 
+   margin-left: 30px;
+   margin-top: 45px;
+}
+.reset-button{
+  
+    padding: 10px 20px;
+    margin-left: 25px;
+    font-size: 12px;
+
+}
+.flip-button{
+  font-size: 11.5px;
+}
+.promo-piece{
+  
+  height:39px;
+}
+.promotion-array{
+margin-top: 15px;
+
+}
+.chessboard12{
+  margin-left: -40px;
+}
+.auto-flip-button {
+  font-size: 11px;
+  
+}
+}
+  @media (max-width:600px) {
+    .piece{
+      height:50px;
+      width:50px;
+     }
+     .chessboard 
+     {
+     height:75%;
+     width:87%; 
+     margin-left: 30px;
+     margin-top: 45px;
+  }
+  .reset-button{
+    
+      padding: 10px 20px;
+      margin-left: 25px;
+      font-size: 12px;
+  
+  }
+  .promo-piece{
+  
+    height:33px;
+  }
+  .promotion-array{
+  margin-top: 26px;
+  
+  }
+  .chessboard12{
+    margin-left: -38px;
+  }
+  .auto-flip-button {
+    font-size: 10px;
+    
+  }
+}
+ @media (max-width:480px) {
+  .piece{
+    height:48px;
+    width:48px;
+   }
+   .chessboard 
+   {
+   height:72%;
+   width:90%; 
+   margin-left: 15px;
+   margin-top: 45px;
+}
+.reset-button{
+
+    padding: 10px 20px;
+    margin-left: 25px;
+    font-size: 10px;
+
+}
+.flip-button{
+  font-size: 10.5px;
+}
+.promo-piece{
+  
+  height:26px;
+}
+.promotion-array{
+margin-top: 28px;
+
+}
+.chessboard12{
+  margin-left: -27px;
+}
+.auto-flip-button {
+  font-size: 9.5px;
+  
+}
+ }
+ 
+ @media (max-width:400px) {
+  .piece{
+    height:40px;
+    width:40px;
+   }
+   .chessboard 
+   {
+   height:62%;
+   width:90%; 
+   margin-left: 13px;
+   margin-top: 70px;
+}
+.reset-button{
+ 
+    padding: 10px 19px;
+    margin-left: 25px;
+    font-size: 8px;
+
+}
+.flip-button{
+  font-size: 10px;
+  height:25px;
+  width: 70px;
+}
+.promo-piece{
+  
+  height:24px;
+}
+.promotion-array{
+margin-top: 26px;
+
+}
+.chessboard12{
+  margin-left: -22px;
+}
+.auto-flip-button {
+  font-size: 8.5px;
+  
+}
+ }
+ @media (max-width:350px) {
+  .piece{
+    height:38px;
+    width:38px;
+    
+   }
+   .promotion-array{
+    display: flex;
+    flex-direction: column;
+   }
+   .chessboard 
+   {
+   height:55%;
+   width:90%; 
+   margin-left: 12px;
+   margin-top: 100px;
+   
+}
+.reset-button{
+  
+    padding: 9px 18px;
+    margin-left: 25px;
+    font-size: 8px;
+
+}
+.flip-button{
+  font-size: 10px;
+  height:22px;
+  width: 65px;
+}
+.auto-flip-button {
+  font-size: 7.5px;
+  
+}
+ }
+ @media (max-width:320px) {
+  .piece{
+    height:35px;
+    width:35px;
+   }
+   .chessboard 
+   {
+   height:50%;
+   width:90%; 
+   margin-left: 10px;
+   margin-top: 110px;
+}
+.reset-button{
+  
+    padding: 7px 16px;
+    margin-left: 25px;
+    font-size: 6px;
+
+}
+.flip-button{
+  font-size: 6px;
+  height:18px;
+  width: 50px;
+}
+.promo-piece{
+  
+    height:20px;
+    width:20px;
+}
+.promotion-array{
+ 
+  margin-top: 26px;
+  
+}
+.chessboard12{
+  margin-left: -18px;
+}
+.auto-flip-button {
+  font-size: 6.8px;
+  
+}
+ }
+ @media (max-width:300px) {
+  .piece{
+    height:32px;
+    width:32px;
+   }
+   .chessboard 
+   {
+   height:45%;
+   width:90%; 
+   margin-left: 10px;
+   margin-top: 110px;
+}
+.reset-button{
+  
+    padding: 7px 16px;
+    margin-left: 25px;
+    font-size: 6px;
+
+}
+.flip-button{
+  font-size: 6px;
+  height:16px;
+  width: 47px;
+}
+.promo-piece{
+  
+  height:18px;
+  width: 17.5px;
+}
+.promotion-array{
+margin-top: 35px;
+}
+.chessboard12{
+  margin-left: -18px;
+}
+.auto-flip-button {
+  font-size: 5.5px;
+  
+}
+ }
+ .button-container {
+  position: relative; 
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.auto-flip-button:hover {
+  background-color: #45a049; 
+}
