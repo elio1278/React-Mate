@@ -11,7 +11,6 @@
 - [Contributing](#contributing)
 
 ## Features
-- **Interactive Gameplay**: Play chess against another player or AI.
 - **Promotion**: Automatically handle pawn promotions.
 - **Check and Checkmate Alerts**: Visual and alert notifications for check and checkmate situations.
 - **Responsive Design**: Playable on desktops and touch devices.
